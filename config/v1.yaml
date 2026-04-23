@@ -1,0 +1,23 @@
+# MultiGuard V1 - FND-CLIP Semantic Baseline
+seed: 42
+
+data:
+  csv_path: data/processed/balanced_dataset.csv
+  max_length: 128
+  val_split: 0.15
+  test_split: 0.15
+
+models:
+  bert: bert-base-uncased
+  clip: openai/clip-vit-base-patch32
+
+model:
+  feat_dim: 512
+
+train:
+  epochs: 5          # Start with 5 for faster first results; bump to 10 later
+  batch_size: 8      # M3 Max MPS: 8 safe, 16 if memory allows
+  lr: 2.0e-5
+  weight_decay: 1.0e-4
+  num_workers: 2     # MPS: keep low (2-4); high can cause hangs
+  out_dir: outputs/v1_fnd_clip

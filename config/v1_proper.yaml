@@ -1,0 +1,23 @@
+# MultiGuard V1 - Properly balanced binary FND-CLIP
+seed: 42
+
+data:
+  csv_path: data/processed/balanced_dataset.csv
+  max_length: 128
+  val_split: 0.15
+  test_split: 0.15
+
+models:
+  bert: bert-base-uncased
+  clip: openai/clip-vit-base-patch32
+
+model:
+  feat_dim: 512
+
+train:
+  epochs: 5
+  batch_size: 16
+  lr: 1.0e-5
+  weight_decay: 1.0e-4
+  num_workers: 2
+  out_dir: outputs/v1_proper

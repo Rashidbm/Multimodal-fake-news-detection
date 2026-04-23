@@ -1,0 +1,84 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.claude/
+
+# Data (too large for the repo)
+data/raw/
+data/processed/
+
+# Model checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+
+# Logs
+*.log
+logs/
+
+# Secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Notebooks / mockups / superseded docs (not part of the V1 pipeline)
+notebooks/
+mockups/
+project-handoff.md
+Task1_Literature_Review.md
+literature_review_chapter3.docx
+literature_review_chapter3.md
+literature_review_chapter3.txt
+literature_review_chapter3_final.txt
+
+# Earlier V1 runs that were superseded by the OOC binary setup
+outputs/v1_ooc/
+outputs/v1_run1_binary/
+outputs/v1_run2_imbalanced/
+outputs/v1_run3_val/
+outputs/v1_dgm4_train/
+outputs/v1_multiclass_archive/
+
+# Intermediate logs and broken-run artefacts under v1_results
+outputs/v1_results/*.log
+outputs/v1_results/llava_5class_*
+outputs/v1_results/llava_ooc_smoke*
+outputs/v1_results/V1_5CLASS_FINAL.md
+outputs/v1_results/V1_COMPLETE_REPORT.md
+outputs/v1_results/V1_FINAL_COMPARISON.md
+outputs/v1_results/V1_FINAL_RESULTS.md
+outputs/v1_results/LLAVA_EXPLAINED.md
+outputs/v1_results/run1_binary_scenarios2v4.*
+outputs/v1_results/v1_5class_test_metrics.yaml
+
+# Misc top-level configs that aren't part of the pipeline
+config/settings.yaml

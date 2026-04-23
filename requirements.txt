@@ -1,0 +1,46 @@
+# MultiGuard - Multimodal Misinformation Detection Dataset Builder
+# Requirements for news scraping and dataset generation
+
+# =============================================================================
+# SCRAPING (PRIORITY)
+# =============================================================================
+newspaper3k>=0.2.8          # Article extraction from URLs
+feedparser>=6.0.0           # RSS feed parsing
+gnews>=0.3.0                # GNews API client
+requests>=2.31.0            # HTTP requests
+aiohttp>=3.9.0              # Async HTTP requests
+beautifulsoup4>=4.12.0      # HTML parsing
+lxml>=4.9.0                 # XML/HTML parser (faster than html.parser)
+Pillow>=10.2.0              # Image processing and validation
+
+# =============================================================================
+# AI GENERATION
+# =============================================================================
+google-generativeai>=0.4.0  # Gemini API for text generation
+# diffusers>=0.26.0         # Local Stable Diffusion (uncomment if using GPU)
+# stability-sdk>=0.8.0      # Stability AI API (uncomment if using)
+# torch>=2.1.0              # PyTorch (uncomment if using local models)
+
+# =============================================================================
+# SEMANTIC ANALYSIS
+# =============================================================================
+sentence-transformers>=2.3.0  # Text embeddings
+# open-clip-torch>=2.24.0     # CLIP for image-text similarity (uncomment when needed)
+
+# =============================================================================
+# UTILITIES
+# =============================================================================
+pyyaml>=6.0.0               # YAML configuration files
+python-dotenv>=1.0.0        # Environment variable management
+tqdm>=4.66.0                # Progress bars
+loguru>=0.7.0               # Better logging
+pandas>=2.2.0               # Data manipulation
+click>=8.1.0                # CLI framework
+rich>=13.7.0                # Beautiful CLI output
+imagehash>=4.3.0            # Perceptual image hashing for deduplication
+tenacity>=8.2.0             # Retry logic for failed requests
+
+# =============================================================================
+# DATA VALIDATION
+# =============================================================================
+pydantic>=2.6.0             # Data validation and settings management
