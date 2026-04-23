@@ -1,0 +1,29 @@
+n_samples: 1724
+fnd_clip:
+  n: 1724
+  accuracy: 0.9622969837587007
+  precision: 0.9685746352413019
+  recall: 0.9588888888888889
+  f1: 0.9637074260189838
+  auc_roc: 0.9946183926645092
+  tn: 796
+  fp: 28
+  fn: 37
+  tp: 863
+llava_zero_shot:
+  n: 1724
+  accuracy: 0.7865429234338747
+  precision: 0.8078703703703703
+  recall: 0.7755555555555556
+  f1: 0.7913832199546486
+  auc_roc: 0.8716120550161812
+  tn: 658
+  fp: 166
+  fn: 202
+  tp: 698
+deltas_fnd_minus_llava:
+  accuracy: 0.1758
+  precision: 0.1607
+  recall: 0.1833
+  f1: 0.1723
+  auc_roc: 0.123

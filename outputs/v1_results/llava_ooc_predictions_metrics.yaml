@@ -1,0 +1,12 @@
+accuracy: 0.7858796296296297
+auc_roc: 0.8711674718196457
+f1: 0.7904869762174406
+fn: 202
+fp: 168
+n_predicted_aligned: 862
+n_predicted_ooc: 866
+n_samples: 1728
+precision: 0.8060046189376443
+recall: 0.7755555555555556
+tn: 660
+tp: 698
